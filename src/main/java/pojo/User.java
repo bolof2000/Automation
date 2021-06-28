@@ -21,3 +21,4 @@ public class User {
     private String website;
     private Company company;
 }
+

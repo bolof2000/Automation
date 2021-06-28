@@ -11,9 +11,13 @@ import org.junit.runner.RunWith;
         glue = "steps",
         dryRun = false,
         monochrome = true,
-        tags = "@testapi001"
+        tags = "@paypal002"
+       // plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+
 
 
 )
 public class TestRunner {
+
+
 }

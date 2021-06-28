@@ -11,7 +11,7 @@ public class HomePage {
         this.driver = driver;
     }
 
-    private By formAthutentication = By.linkText("");
+    private By formAthutentication = By.linkText("Form Authentication");
 
 
     public LoginPage clickFormAuthentication(){

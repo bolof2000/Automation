@@ -13,7 +13,7 @@ public class LoginPage {
 
     private By usernameText = By.id("username");
     private By passwordText = By.id("password");
-    private By loginButton = By.linkText("");
+    private By loginButton = By.cssSelector("#login button");
 
 
 

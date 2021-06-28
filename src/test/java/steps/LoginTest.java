@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import pages.HomePage;
 import pages.LoginPage;
@@ -19,7 +20,7 @@ public class LoginTest {
     }
     @Given("I am on the homepage")
     public void iAmOnTheHomepage() {
-        driver.get("");
+        driver.get("https://the-internet.herokuapp.com/");
 
     }
 
@@ -37,6 +38,6 @@ public class LoginTest {
 
     @Then("verify the I am on the secure page area")
     public void verifyTheIAmOnTheSecurePageArea() {
-
+        Assert.assertTrue(secureAreaPage.verifyLogin().contains("You logged into a secure area!"));
     }
 }

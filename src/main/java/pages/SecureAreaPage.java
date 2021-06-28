@@ -7,11 +7,14 @@ public class SecureAreaPage {
 
     private WebDriver driver;
 
-
     public SecureAreaPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    private By verifylogin = By.id("");
+    private By verifylogin = By.id("flash-messages");
+
+    public String verifyLogin(){
+        return driver.findElement(verifylogin).getText();
+    }
 
 }
